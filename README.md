@@ -14,7 +14,7 @@ Standard MLPs apply a nonlinearity after each linear layer, making the weights u
 
 We decompose that weight tensor directly using tensor methods and find that **dictionary learning recovers a human-readable visual vocabulary**: upper-curve, open-curve, closed-loop, hook-end, diagonal, double-loop. These six atoms are interpretable enough that you can write the full 10-class classifier by hand and get **90.1% test accuracy** (vs. the model's trained 96.8%).
 
-The weights are not just readable — they're writable.
+The weights are writable, not just readable!
 
 ---
 
