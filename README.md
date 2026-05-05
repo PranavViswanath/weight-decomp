@@ -2,7 +2,7 @@
 
 **Dictionary learning on bilinear MLP weights yields a human-programmable visual vocabulary**
 
-*Pranav Viswanath — MARS V Application, 2026*
+*Pranav Viswanath - MARS V Application, 2026*
 
 📄 **[Read the report (PDF)](report.pdf)**
 
@@ -12,7 +12,7 @@
 
 Standard MLPs apply a nonlinearity after each linear layer, making the weights uninterpretable in isolation. This project uses a **bilinear MLP** (Dooms & Gauderis, ICLR 2025), where the output logit for each class is an exact quadratic form in the input - fully determined by a symmetric 784×784 weight matrix, no activations needed.
 
-We decompose that weight tensor directly using tensor methods and find that **dictionary learning recovers a human-readable visual vocabulary**: upper-curve, open-curve, closed-loop, hook-end, diagonal, double-loop. These six atoms are interpretable enough that you can write the full 10-class classifier by hand and get **90.1% test accuracy** (vs. the model's trained 96.8%).
+I decompose that weight tensor directly using tensor methods and find that **dictionary learning recovers a human-readable visual vocabulary**: upper-curve, open-curve, closed-loop, hook-end, diagonal, double-loop. These six atoms are interpretable enough that you can write the full 10-class classifier by hand and get **90.1% test accuracy** (vs. the model's trained 96.8%).
 
 The weights are writable, not just readable!
 
